@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Анкета</title>
+</head>
+<body>
+    <header class="header">
+        <div id="sub_menu1"></div>
+        <div id="sub_menu2"></div>
+        <div id="sub_menu3"></div>
+        <div id="sub_menu4"><img class="burger" src="img/burger.png" alt="">Login</div>
+    </header>
+    <div id="window">
+      <div class="form-wrap">
+        <div class="profile"><img src="https://html5book.ru/wp-content/uploads/2016/10/profile-image.png">
+          <h1>Регистрация</h1>
+        </div>
+        <form method="post" action="form.php">
+          <img src="img/close.png" id="close">
+          <div>
+            <label for="name">Имя</label>
+            <input type="text" name="name" required>
+          </div>
+          <select name="D1" size="1">
+            <option selected value="Год рождения">Год рождения</option>
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+          </select>
+          <div class="radio">
+            <span>Пол</span>
+            <label>
+              <input type="radio" name="sex" value="мужской">мужской
+              <div class="radio-control male"></div>
+            </label>
+            <label>
+              <input type="radio" name="sex" value="женский">женский
+              <div class="radio-control female"></div>
+            </label>
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" required>
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" required>
+          </div>
+          <div>
+            <label for="country">Страна</label>
+            <select name="country">
+              <option>Выберите страну проживания</option>
+              <option value="Россия">Россия</option> 
+              <option value="Украина">Украина</option> 
+              <option value="Беларусь">Беларусь</option> 
+            </select> 
+            <div class="select-arrow"></div> 
+          </div> 
+          <button type="submit">Отправить</button> 
+        </form> 
+      </div>
+    </div>
+      <script src="script.js"></script>
+    </body>
+    </html>
